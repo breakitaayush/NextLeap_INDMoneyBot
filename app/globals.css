@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 15% 0%, rgba(95, 143, 123, 0.12), transparent 28rem),
+    radial-gradient(circle at 90% 10%, rgba(169, 154, 199, 0.10), transparent 26rem),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.78), rgba(248, 244, 236, 0.96)),
+    #f8f4ec;
+  color: #17211f;
+}
+
+.dark body {
+  background:
+    radial-gradient(circle at 15% 0%, rgba(95, 143, 123, 0.12), transparent 28rem),
+    radial-gradient(circle at 90% 5%, rgba(169, 154, 199, 0.10), transparent 24rem),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(20, 32, 29, 0.98)),
+    #14201d;
+  color: #eef6f2;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+@layer components {
+  .focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-ayuva-green focus:ring-offset-2 dark:focus:ring-offset-ayuva-night;
+  }
+
+  .card {
+    @apply border border-black/5 bg-ayuva-card shadow-soft transition duration-300 dark:border-white/10 dark:bg-ayuva-nightCard;
+    border-radius: 1.375rem;
+  }
+
+  .lift-card {
+    @apply active:translate-y-0;
+  }
+
+  .lift-card:hover {
+    transform: translateY(-0.125rem);
+    box-shadow: 0 16px 42px rgba(49, 93, 81, 0.12);
+  }
+
+  .primary-button {
+    @apply focus-ring inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl bg-ayuva-green px-5 py-3 text-sm font-semibold text-white transition duration-300 hover:bg-ayuva-greenDark disabled:cursor-not-allowed disabled:opacity-60;
+    box-shadow: 0 12px 34px rgba(49, 93, 81, 0.1);
+  }
+
+  .secondary-button {
+    @apply focus-ring inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl bg-ayuva-mint px-5 py-3 text-sm font-semibold text-ayuva-greenDark transition duration-300 hover:bg-white disabled:cursor-not-allowed disabled:opacity-60 dark:bg-white/10 dark:text-emerald-100 dark:hover:bg-white/15;
+  }
+
+  .input {
+    @apply focus-ring w-full rounded-2xl border border-black/10 bg-white/90 px-4 py-3 text-sm text-ayuva-ink placeholder:text-ayuva-muted transition duration-300 dark:border-white/10 dark:bg-white/10 dark:text-white dark:placeholder:text-white/50;
+  }
+
+  .label {
+    @apply grid gap-2 text-sm font-semibold text-ayuva-ink dark:text-white;
+  }
+}
+
+@keyframes ayuva-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.floaty {
+  animation: ayuva-float 9s ease-in-out infinite;
+}
+
+.calm-surface {
+  background:
+    linear-gradient(135deg, rgba(237, 245, 239, 0.95), rgba(255, 253, 248, 0.9)),
+    #fffdf8;
+}
+
+.dark .calm-surface {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03)),
+    #1b2925;
+}
