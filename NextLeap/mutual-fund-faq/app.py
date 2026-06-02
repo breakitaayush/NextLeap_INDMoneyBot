@@ -99,7 +99,7 @@ FACTS = [
     },
     {
         "schemes": ["hdfc flexi cap fund", "hdfc flexi", "flexi cap"],
-        "topics": ["expense ratio", "ter"],
+        "topics": ["expense ratio", "expense", "ter"],
         "answer": "For the latest expense ratio of HDFC Flexi Cap Fund, use HDFC Mutual Fund's official Total Expense Ratio disclosure or the latest factsheet.",
         "sources": ["6", "7"],
     },
@@ -129,7 +129,7 @@ FACTS = [
     },
     {
         "schemes": ["hdfc top 100 fund", "hdfc top 100", "hdfc large cap fund", "hdfc large cap", "top 100", "large cap"],
-        "topics": ["expense ratio", "ter"],
+        "topics": ["expense ratio", "expense", "ter"],
         "answer": "The HDFC scheme page showed a TER of 1.59 for HDFC Large Cap Fund, formerly HDFC Top 100 Fund, in the checked source.",
         "sources": ["1"],
     },
@@ -147,7 +147,7 @@ FACTS = [
     },
     {
         "schemes": ["hdfc elss tax saver fund", "hdfc elss tax saver", "hdfc elss", "elss", "tax saver"],
-        "topics": ["expense ratio", "ter"],
+        "topics": ["expense ratio", "expense", "ter"],
         "answer": "The HDFC scheme page showed a TER of 1.70 for HDFC ELSS Tax Saver in the checked source.",
         "sources": ["9"],
     },
@@ -250,6 +250,7 @@ SOURCE_HINTS = [
 
 TOPIC_TERMS = [
     "expense ratio",
+    "expense",
     "ter",
     "exit load",
     "fee",
@@ -280,6 +281,7 @@ TOPIC_TERMS = [
 
 SCHEME_SPECIFIC_TERMS = [
     "expense ratio",
+    "expense",
     "ter",
     "exit load",
     "fee",
@@ -300,7 +302,7 @@ SCHEME_SPECIFIC_TERMS = [
 ]
 
 INTENT_TOPICS = {
-    "expense_ratio": ["expense ratio", "ter"],
+    "expense_ratio": ["expense ratio", "expense", "ter"],
     "exit_load": ["exit load", "load", "fee", "charge", "redeem", "redemption", "withdraw", "withdrawal"],
     "minimum_sip": ["minimum sip", "min sip", "sip amount"],
     "lock_in": ["lock-in", "lock in", "lockin"],
