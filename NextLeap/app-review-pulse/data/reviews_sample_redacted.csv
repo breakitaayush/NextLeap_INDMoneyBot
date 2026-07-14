@@ -1,0 +1,19 @@
+platform,rating,title,text,date
+Play Store,2,KYC keeps failing,"KYC verification keeps failing after I upload the same document again. The app does not explain what is wrong.",2026-07-08
+App Store,5,Easy mutual fund tracking,"The portfolio view is simple and I can see my mutual funds in one place.",2026-07-06
+Play Store,1,UPI payment stuck,"My SIP payment showed pending for hours and I could not tell whether it would retry.",2026-07-02
+App Store,3,Statements are hard to find,"I wanted a capital gains statement but the menu path was not obvious.",2026-06-29
+Play Store,2,Login issue,"The app logged me out and the OTP screen kept loading.",2026-06-25
+App Store,4,Good dashboard,"Dashboard is clean and holdings refresh quickly most days.",2026-06-21
+Play Store,2,Withdrawal delay,"The withdrawal status did not update clearly after I placed a redemption request.",2026-06-18
+App Store,3,Need clearer support,"Support replied but I had to repeat the same issue twice.",2026-06-13
+Play Store,1,Payment failure,"Money got debited but the app still showed payment failed for the order.",2026-06-09
+App Store,2,Can not download report,"Tax report download failed twice and there was no clear error message.",2026-06-04
+Play Store,4,Useful app,"I like the way stocks and mutual funds are shown together.",2026-05-29
+App Store,2,Onboarding confusing,"Account setup asks for many steps and I was not sure which one was pending.",2026-05-24
+Play Store,3,KYC pending,"KYC has been pending for several days and the status message is generic.",2026-05-20
+App Store,2,Statement download,"Capital gains report should be easier to access before tax filing.",2026-05-16
+Play Store,1,App slow after update,"After the latest update the portfolio screen takes too long to load.",2026-05-11
+App Store,4,Helpful overview,"It gives a useful snapshot of my investments without opening multiple apps.",2026-05-07
+Play Store,2,SIP issue,"SIP setup failed at payment confirmation and I could not find next steps.",2026-05-02
+App Store,3,Support wait time,"The chat support queue took longer than expected for a payment issue.",2026-04-28
